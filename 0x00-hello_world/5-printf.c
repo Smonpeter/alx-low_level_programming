@@ -2,7 +2,7 @@
 
 /**
  *  main - prints a sentence with proper grammar that forms a piece of art
- *  return: 0 (success)
+ *  Return: 0 (Success)
   */
 int main(void)
 {
