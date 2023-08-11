@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * Main - This program prints a sentence with proper grammar that forms a piece
+ * main - This program prints a sentence with proper grammar that forms a piece
  *        of art
  * Return: 0 (success)
  */
