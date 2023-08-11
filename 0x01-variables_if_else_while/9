@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point of the program
+ *
+ * Description: This program prints all possible combinations of
+ *              single-digit numbers, separated by a comma and space,
+ *              in ascending order using the putchar function.
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    int number = 0;
+
+    while (number <= 9)
+    {
+        putchar(number + '0');  // Print the number as a character
+        if (number < 9)
+        {
+            putchar(',');  // Print comma
+            putchar(' ');  // Print space
+        }
+        number++;
+    }
+
+    putchar('\n');  // Print a new line at the end
+    return (0);
+}
