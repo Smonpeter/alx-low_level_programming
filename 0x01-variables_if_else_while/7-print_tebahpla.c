@@ -10,14 +10,12 @@
  */
 int main(void)
 {
-    char letter = 'z';
+	char ch;
 
-    while (letter >= 'a')
-    {
-        putchar(letter);
-        letter--;
-    }
-
-    putchar('\n');  // Print a new line after the alphabet
-    return (0);
+	for (ch = 'z'; ch >= 'a'; ch--)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
 }
