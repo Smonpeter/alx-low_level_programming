@@ -11,16 +11,15 @@
  */
 int main(void)
 {
-    char letter = 'a';
+	int i;
 
-    while (letter <= 'z')
-    {
-        if (letter != 'q' && letter != 'e')
-            putchar(letter);
-        
-        letter++;
-    }
-
-    putchar('\n');  // Print a new line after the alphabet
-    return (0);
-}
+	for (i = 97; i < 123; i++)
+	{
+		if (i !=101 && i != 123)
+		{
+			putchar(i);
+		}
+	}
+	putchar('\n');
+	return (0);
+}	
