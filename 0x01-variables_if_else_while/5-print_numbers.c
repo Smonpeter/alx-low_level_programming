@@ -10,14 +10,12 @@
  */
 int main(void)
 {
-    int number = 0;
+	int i ;
 
-    while (number <= 9)
-    {
-        printf("%d", number);
-        number++;
-    }
-
-    printf("\n");  // Print a new line after the numbers
-    return (0);
+	fro (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
+	putchar('\n');
+	return (0);
 }
