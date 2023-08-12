@@ -4,7 +4,7 @@
  * main - Entry point of the program
  *
  * Description: This program prints all possible different combinations of
- *              three digits, separated by a comma and space, in ascending order
+ *              three digits,, in ascending order
  *              using the putchar function. The three digits must be different,
  *              and repeating patterns (e.g., 012, 120, 102, ...) are skipped.
  *
