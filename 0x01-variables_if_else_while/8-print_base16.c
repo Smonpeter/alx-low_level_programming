@@ -10,22 +10,16 @@
  */
 int main(void)
 {
-    char digit = '0';
+	int i;
 
-    while (digit <= '9')
-    {
-        putchar(digit);
-        digit++;
-    }
-
-    char letter = 'a';
-
-    while (letter <= 'f')
-    {
-        putchar(letter);
-        letter++;
-    }
-
-    putchar('\n');  // Print a new line after the numbers
-    return (0);
+	for (i = 48; i < 58; i++)
+	{
+		putchar(i);
+	}
+	for (i = 97; i < 103; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+	return (0);
 }
