@@ -1,15 +1,3 @@
-#include <stdio.h>
+#!/bin/bash
+echo -e '#include <stdio.h>\nint main() { printf("Size of char: %zu bytes\\nSize of short: %zu bytes\\nSize of int: %zu bytes\\nSize of long: %zu bytes\\nSize of long long: %zu bytes\\nSize of float: %zu bytes\\nSize of double: %zu bytes\\nSize of long double: %zu bytes\\n", sizeof(char), sizeof(short), sizeof(int), sizeof(long), sizeof(long long), sizeof(float), sizeof(double), sizeof(long double)); return 0; }' | gcc -x c -o size_printer - && ./size_printer
 
-int main() 
-{
-       	printtf("Size of char: %zu byte(s)\n", sizeof(char));
-	printf("Size of short: %zu byte(s)\n", sizeof(short));
-	printf("Size of int: %zu byte(s)\n", sizeof(int));
-	printf("Size of long: %zu byte(s)\n", sizeof(long));
-	printf("Size of long long: %zu byte(s)\n", sizeof(long long));
-	printf("Size of float: %zu byte(s)\n", sizeof(float));
-	printf("Size of double: %zu byte(s)\n", sizeof(double));
-	printf("Size of long double: %zu byte(s)\n", sizeof(long double));
-
-	return 0;
-}
