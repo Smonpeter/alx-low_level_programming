@@ -1,2 +1,15 @@
-#!/bin/bash
-echo -e "Size of a char: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(char\)') byte(s)\nSize of an int: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(int\)') byte(s)\nSize of a long int: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(long\)') byte(s)\nSize of a long long int: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(long long\)') byte(s)\nSize of a float: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(float\)') byte(s)\n"
+#include <stdio.h>
+
+int main() 
+{
+       	printtf("Size of char: %zu byte(s)\n", sizeof(char));
+	printf("Size of short: %zu byte(s)\n", sizeof(short));
+	printf("Size of int: %zu byte(s)\n", sizeof(int));
+	printf("Size of long: %zu byte(s)\n", sizeof(long));
+	printf("Size of long long: %zu byte(s)\n", sizeof(long long));
+	printf("Size of float: %zu byte(s)\n", sizeof(float));
+	printf("Size of double: %zu byte(s)\n", sizeof(double));
+	printf("Size of long double: %zu byte(s)\n", sizeof(long double));
+
+	return 0;
+}
