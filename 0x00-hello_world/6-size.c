@@ -1,14 +1,2 @@
-#include <stdio.h>
-
-int main() {
-    printf("Size of char: %zu bytes\n", sizeof(char));
-    printf("Size of short: %zu bytes\n", sizeof(short));
-    printf("Size of int: %zu bytes\n", sizeof(int));
-    printf("Size of long: %zu bytes\n", sizeof(long));
-    printf("Size of long long: %zu bytes\n", sizeof(long long));
-    printf("Size of float: %zu bytes\n", sizeof(float));
-    printf("Size of double: %zu bytes\n", sizeof(double));
-    printf("Size of long double: %zu bytes\n", sizeof(long double));
-
-    return 0;
-}
+#!/bin/bash
+echo -e "Size of a char: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(char\)') byte(s)\nSize of an int: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(int\)') byte(s)\nSize of a long int: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(long\)') byte(s)\nSize of a long long int: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(long long\)') byte(s)\nSize of a float: $(gcc -xc -E - <<< '#include <stdio.h>' | grep -oP '\Ksizeof\(float\)') byte(s)\n"
