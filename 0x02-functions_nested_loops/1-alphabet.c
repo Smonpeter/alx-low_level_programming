@@ -10,4 +10,4 @@ void print_alphabet(void)
 	for (i = 'a' ; i <= 'z' ; i++)
 		_putcha(ri);
 	_putchar('\n');
-}	
+}
