@@ -4,18 +4,19 @@
 #include <stdio.h>
 
 /**
- * print_times_table - Prints the n times table
- * @n: The number for which to print the times table
+ *main -  print_times_table - Prints the n times table
+ *Return:(0)Succes
  */
-void print_times_table(int n)
+int main(void)
 {
 	int sum = 0;
 	int n;
 
 	for (n = 1 ; n <= 10 ; n++)
 	{
-		if (n % 3 == 0 || n % == 0)
-			sum = sum = n;
+		if (n % 3 == 0 || n % 5 == 0)
+			sum = sum + n;
 	}
 	printf("%d\n");
+	return (0);
 }
