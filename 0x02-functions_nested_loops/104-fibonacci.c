@@ -14,7 +14,7 @@ int main(void)
 		next = a + b;
 		a = b;
 		b = next;
-		pitnf("%lu", next);
+		pritnf("%lu", next);
 
 		if (i < 97)
 			printf(", ");
